@@ -1,97 +1,103 @@
-=== Bulk Product Remover ===
-Contributors: kamal15
-Tags: woocommerce, bulk-delete, products, admin tools, csv
-Requires at least: 5.0
-Tested up to: 6.8
-Requires PHP: 7.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Efficiently remove multiple WooCommerce products at once using CSV file upload, streamlining your product management workflow.
+# Bulk Product Remover
 
-== Description ==
+**Contributors:** kamal15  
+**Tags:** woocommerce, bulk-delete, products, admin tools, csv  
+**Requires at least:** 5.0  
+**Tested up to:** 6.8  
+**Requires PHP:** 7.2  
+**Stable tag:** 1.0.0  
+**License:** GPLv2 or later  
+**License URI:** [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
 
-**Bulk Product Remover** is a powerful and user-friendly WordPress plugin that allows you to efficiently remove multiple WooCommerce products at once using a simple CSV file upload. It's designed to save time when managing large product catalogs by providing a quick and secure way to remove products in bulk.
+---
 
-== Installation ==
+## Description
 
-1. Upload the `bulk-product-remover` folder to your `/wp-content/plugins/` directory or install the plugin via the WordPress plugin directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Once activated, go to the **Products** section and you'll see a new submenu called **Bulk Remover**.
-4. Upload your CSV file containing product IDs and click "Delete Products" to remove them.
+**Bulk Product Remover** is a powerful, user-friendly WordPress plugin that allows you to efficiently delete multiple WooCommerce products simultaneously by uploading a simple CSV file. Save time managing large catalogs with a quick and secure bulk deletion process.
 
-== How to Use ==
+---
 
-1. After activation, navigate to **Products** > **Bulk Remover** in your WordPress admin menu.
-2. Prepare a CSV file with product IDs in the first column.
-3. Upload the CSV file using the file input field.
-4. Click the **Delete Products** button to start the deletion process.
-5. Monitor the progress bar to track the deletion status.
-6. Once complete, you can download a report of deleted products.
+## Installation
 
-Note: Product ID must match to delete the products else you will get bank csv file.
+1. Upload the `bulk-product-remover` folder to your `/wp-content/plugins/` directory **OR** install the plugin via the WordPress plugin directory.  
+2. Activate the plugin via the **Plugins** menu in WordPress.  
+3. Navigate to **Products** > **Bulk Remover** in the WordPress admin menu.  
+4. Upload your CSV file containing product IDs and click **Delete Products**.
 
-== Features ==
+---
 
-- **CSV File Upload**: Easily upload a CSV file containing product IDs for bulk deletion.
-- **Progress Tracking**: Real-time progress bar showing deletion status.
-- **Detailed Reports**: Download a CSV report of deleted products with their details.
-- **Security**: Built-in security measures including nonce verification and file validation.
-- **User Permissions**: Only users with WooCommerce management capabilities can use the plugin.
-- **Error Handling**: Comprehensive error handling for file uploads and product deletion.
-- **Multilingual Support**: Easily translate the plugin for various languages.
+## How to Use
 
-== Screenshots ==
+1. Prepare a CSV file with product IDs in the first column (header can be `id`).  
+2. Go to **Products > Bulk Remover** in your admin dashboard.  
+3. Upload your CSV file using the provided file input.  
+4. Click **Delete Products** to start the deletion.  
+5. Monitor the progress bar for real-time status.  
+6. Download the report after completion.
 
-1.  ![Start deleting the products](assets/screenshots/Bulk-Product-Remover.png)
+> **Note:** Product IDs must exactly match existing products to be deleted. Otherwise, the CSV will not remove those entries.
 
-2.  ![After successully deletion ](assets/screenshots/Bulk-Product-Remover.png)
+---
 
-== Frequently Asked Questions ==
+## Features
 
-= What format should my CSV file be in? =
-Your CSV file should contain product IDs in the first column. The first row can be a header row with "id" as the column name.
+- ✅ CSV file upload for bulk product deletion  
+- ✅ Real-time progress bar to track deletion  
+- ✅ Download detailed deletion reports  
+- ✅ Secure operations with nonce verification & file validation  
+- ✅ Access restricted to WooCommerce management users  
+- ✅ Robust error handling for uploads & deletion  
+- ✅ Multilingual ready  
 
-= Is there a limit to how many products I can delete at once? =
-The plugin can handle large numbers of products, but it's recommended to process them in batches of 100-200 for optimal performance.
+---
 
-= What happens if a product ID in the CSV doesn't exist? =
-The plugin will skip non-existent product IDs and continue with the deletion process for valid products.
+## Screenshots
 
-= Can I get a report of which products were deleted? =
-Yes, after the deletion process is complete, you can download a CSV report containing details of all deleted products.
+| ![Start deleting the products](assets/screenshots/Bulk-Product-Remover.png) | ![After successful deletion](assets/screenshots/Bulk-Product-Remover.png) |
+| :---: | :---: |
+| Start deleting products | Deletion completed |
 
-= Is the plugin secure? =
-Yes, the plugin includes multiple security measures:
-- Nonce verification for all actions
-- File type validation
-- File size limits
-- User capability checks
-- Input sanitization and validation
+---
 
-== Changelog ==
+## Frequently Asked Questions
 
-= 1.0.0 =
-* Initial release with core features:
-  - CSV file upload for product deletion
-  - Progress tracking
-  - Deletion reports
-  - Security measures
+**Q:** What format should my CSV file be in?  
+**A:** CSV must have product IDs in the first column, optionally with the first row as `id`.
 
-== Screenshots ==
-1. Plugin activation screen.
-2. Bulk removal form with file upload.
-3. Progress tracking interface.
-4. Deletion report download option.
+**Q:** Is there a limit on how many products I can delete?  
+**A:** Batch size of 100-200 recommended for best performance.
 
-== License ==
+**Q:** What if some product IDs don't exist?  
+**A:** Non-existent IDs will be skipped automatically.
 
-This plugin is released under the GPL-2.0 license. You are free to modify and redistribute it under the terms of this license.
+**Q:** Can I get a report of deleted products?  
+**A:** Yes, after deletion, download a CSV report with product details.
 
-== Contact ==
-For support or inquiries, email: virdikamal909@gmail.com 
+**Q:** Is this plugin secure?  
+**A:** Absolutely! It includes nonce checks, file validation, capability checks, and input sanitization.
 
+---
 
+## Changelog
+
+### 1.0.0
+- Initial release  
+- CSV upload for product deletion  
+- Progress tracking  
+- Deletion reports  
+- Security features  
+
+---
+
+## License
+
+Released under the [GPL-2.0 License](https://www.gnu.org/licenses/gpl-2.0.html). You are free to modify and redistribute it under these terms.
+
+---
+
+## Contact
+
+For support or inquiries, email: [virdikamal909@gmail.com](mailto:virdikamal909@gmail.com)
 
 
