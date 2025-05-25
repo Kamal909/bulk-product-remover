@@ -42,6 +42,11 @@ Note: Product ID must match to delete the products else you will get bank csv fi
 - **Error Handling**: Comprehensive error handling for file uploads and product deletion.
 - **Multilingual Support**: Easily translate the plugin for various languages.
 
+== Screenshots ==
+
+1.  assets/screenshots/Bulk-Products-Remover.png
+2.  assets/screenshots/Bulk-Product-Remover.png
+
 == Frequently Asked Questions ==
 
 = What format should my CSV file be in? =
@@ -85,3 +90,7 @@ This plugin is released under the GPL-2.0 license. You are free to modify and re
 
 == Contact ==
 For support or inquiries, email: virdikamal909@gmail.com 
+
+
+
+
